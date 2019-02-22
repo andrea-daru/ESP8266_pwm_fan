@@ -5,7 +5,7 @@
 ## Electrical scheme
 The electrical scheme include the circuit to control **NON PWM Fan (3 Pin)**.
 
-If you already have a **PWM Fan (4 Pin)** ignore these part and connect the fan pwm pin **directly to the GPIO D1**
+If you already have a **PWM Fan (4 Pin)** ignore this part and connect the fan pwm pin **directly to the GPIO D1**
 ![Alt text](images/fan-controller-circuit.png?raw=true "Electrical scheme")
 
 ## Config JSON example
