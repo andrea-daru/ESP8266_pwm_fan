@@ -1,0 +1,16 @@
+{
+	"fan_speed_config": [{
+			"temp": 20,
+			"speed": 25
+		},{
+			"temp": 25,
+			"speed": 40
+		},{
+			"temp": 35,
+			"speed": 100
+		},{
+			"temp": 30,
+			"speed": 65
+		}
+	]
+}

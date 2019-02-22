@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Andrea Alessandro Darù - andrea.daru@gmail.com">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="pwmfan.css">
+
+    <title>Fan controller</title>
+  </head>
+  <body>
+  	<div class="container">
+    	<div class="row">
+    		<div class="col">
+    		</div>
+    		<div class="col-md-6">
+    			<div class="row">
+    				<h1>Current status</h2>
+    			</div>
+    			<div class="row">
+    				<div id="gauge_div">
+    					<canvas id="temp_gauge"></canvas>
+						<canvas id="fan_gauge"></canvas>
+    				</div>
+    			</div>
+    			<div class="row">
+					<table class="table">
+					  <tbody>
+						<tr>
+						  <th>Temperature (°C)</th>
+						  <td id="current_t">-</td>
+						</tr>
+						<tr>
+						  <th>Humidity (%)</th>
+						  <td id="current_h">-</td>
+						</tr>
+						<tr>
+						  <th>Fan speed (%)</th>
+						  <td id="current_fs">-</td>
+						</tr>
+					  </tbody>
+					</table>
+				</div>
+    		</div>
+    		<div class="col">
+    		</div>
+    	</div>
+	  	<div class="row">
+	  		<div class="col">
+    		</div>
+    		<div class="col-md-6">
+    			<h1>Current configuration</h1>
+    			<div id="config-table"></div>
+				<form method="post" enctype="multipart/form-data">
+					<input type="file" name="name">
+					<input class="button" type="submit" value="Update config.">
+				</form>
+    		</div>
+    		<div class="col">
+    		</div>
+	  	</div>
+	</div>
+	
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="jquery-3.3.1.min.js"></script>
+	<script src="popper.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+	<script src="gauge.min.js"></script>
+	<script src="pwmfan.js"></script>
+  </body>
+</html>
