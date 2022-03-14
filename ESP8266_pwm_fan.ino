@@ -37,8 +37,8 @@ int timeSinceLastRead = 0;
 File fsUploadFile; // a File object to temporarily store the received file
 
 // Parametri di connessione alla rete WiFi#################
-const char* ssid = "Daru FRITZ!Box";
-const char* password = "enabledaruswificonnection!";
+const char* ssid = "xxxxxxxxxxxxxx";
+const char* password = "xxxxxxxxxxxxxx";
 IPAddress ip(192, 168, 1, 250);
 IPAddress gateway(192, 168, 1, 1);
 IPAddress subnet(255, 255, 255, 0);
@@ -48,8 +48,8 @@ IPAddress subnet(255, 255, 255, 0);
 #define MQTT_SERVER "192.168.1.102"
 #define MQTT_PORT "1883"
 
-#define MQTT_USER   "openhabian"
-#define MQTT_PWD    "enableopenhabian!"
+#define MQTT_USER   "xxxxxxxxxx"
+#define MQTT_PWD    "xxxxxxxxxx"
 
 #define MQTT_HUM_TOPIC      "pwmfan/humidity"
 #define MQTT_TEMP_TOPIC     "pwmfan/temperature"
